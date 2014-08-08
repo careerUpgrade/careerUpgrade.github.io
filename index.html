@@ -15,6 +15,7 @@
         background-size: cover;
         min-height: 500px;
       }
+      
       .logo {
         font-family: 'Open Sans', sans-serif;   
         color: white;
@@ -35,22 +36,31 @@
         background-color: white;
         display:inline;
        }
+      /* Medium Devices, Desktops */
+      @media only screen and (max-width : 992px) {
+        .header{
+          margin-right:20px;
+          font-size: 60px;
+        }
+      }
       .sub-header{
         font-family: 'Open Sans', sans-serif;
         font-size:20px;
       }
       .caption h3{
-        color:white;
+        color:black;
         font-family: 'Open Sans', sans-serif;
         font-weight:bolder;
         font-size: 36px;
       }
       .caption p{
-        color:white;
+        color:rgb(78, 76, 76);
         font-family: 'Open Sans', sans-serif;        
         font-size: 20px;
       }
-
+      #course-content{
+        background:#e6e6e6;
+      }
       .course-content-header{
         font-family: monospace;
         font-size: 50px;
@@ -58,7 +68,10 @@
         background-color: #112C61;
       }
       .thumbnail{
-        background: red;
+        background: white;
+        border-top-style: solid;
+        border-top-color: red;
+        border-top-width: thick;
       }
 
     </style>
@@ -82,7 +95,7 @@
       <main>
 	<div class="container">
 	  <div class="row">
-	    <div class="col-sm-offset-7 col-sm-5 col-xs-offset-3 col-xs-9 text-right">
+	    <div class="pull-right text-right">
 	      <div class="row header-division">
 		<h1 class="header">Intro al</h1>
 	      </div>
