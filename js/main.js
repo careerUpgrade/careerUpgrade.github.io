@@ -18,7 +18,7 @@ $(document).ready(function(){
     function setBackgroundImgSize(){
 	var h = $(window).height();
 	var w = $(window).width();
-	$('.main').css({'min-height':h*0.9});
+	$('.main').css({'min-height':h*0.85});
 	if(w <= 768){
 	    $('.main').css({'background-position-x':'-291px'});
 	}
