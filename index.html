@@ -9,315 +9,368 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap-theme.css" rel="stylesheet">
     <style>
       .main{
-        background-color: black;
-        background-image:url('images/main-background.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 500px;
+      background-color: black;
+      background-image:url('images/main-background2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 500px;
       }
-      
       .logo {
-        font-family: 'Open Sans', sans-serif;   
-        color: white;
-        background-color: red;
-        border: 4px;
-        border-color: red;
-        border-style: solid;
-        display: inline;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      background-color: red;
+      border: 4px;
+      border-color: red;
+      border-style: solid;
+      display: inline;
       }
       .header-division {
-        margin-bottom: 8px;
+      margin-bottom: 8px;
       }
       .header {
-        -webkit-font-smoothing: antialiased;
-        font-family: 'Open Sans', sans-serif;
-        font-size:80px;
-        color:red;
-        background-color: white;
-        display:inline;
-       }
-      /* Medium Devices, Desktops */
-      @media only screen and (max-width : 992px) {
-        .header{
-          margin-right:20px;
-          font-size: 60px;
-        }
-        a.section-header{
-          font-size:35px;
-        }
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Open Sans', sans-serif;
+      font-size:50px;
+      color:rgb(51,51,51);
+      background-color: white;
+      display:inline;
       }
       .sub-header{
-        font-family: 'Open Sans', sans-serif;
-        font-size:20px;
+      font-family: 'Open Sans', sans-serif;
+      font-size:20px;
       }
       .caption h3{
-        color:black;
-        font-family: 'Open Sans', sans-serif;
-        font-weight:bolder;
-        font-size: 36px;
+      color:black;
+      font-family: 'Open Sans', sans-serif;
+      font-weight:bolder;
+      font-size: 36px;
       }
       .caption p{
-        color:rgb(78, 76, 76);
-        font-family: 'Open Sans', sans-serif;        
-        font-size: 20px;
+      color:rgb(78, 76, 76);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
       }
       #course-content{
-        background:#e6e6e6;
+      background:#e6e6e6;
       }
       .section-header{
-        font-family: monospace;
-        font-size: 50px;
-        color: white;
-        background-color: #112C61;
+      margin-top:5px;
+      margin-bottom:5px;
+      font-size:35px;
+      font-family: monospace;
+      color: white;
       }
       .thumbnail{
-        background: white;
-        border-top-style: solid;
-        border-top-color: red;
-        border-top-width: thick;
-        transition: 0.2s;
+      background: white;
+      border-top-style: solid;
+      border-top-color: red;
+      border-top-width: thick;
+      transition: 0.2s;
       }
-      .thumbnail:hover{
+      /* Medium Devices, Desktops */
+      @media only screen and (min-width : 768px) {
+        .thumbnail:hover{
         border-top-width:30px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
         transition: 0.5s;
+        }
+        .thumbnail:hover span.glyphicon{
+        font-size:50px;
+        }
       }
-
       #inscriptions{
-        background-color: #1F52B3;
+      background-color: #1F52B3;
       }
       #welcu_embed_sale_36643625{
-        background-color:white;
+      background-color:white;
       }
       .section-header-row{
-        margin-top:20px;
-        margin-bottom:20px;
+      margin-top:20px;
+      margin-bottom:20px;
       }
       #info{
-        background-color: #2C95FF;
+      background-color: #2C95FF;
       }
-      
-
       .card-prototype{
-        border-top-color:rgb(47, 197, 47);
+      border-top-color:rgb(47, 197, 47);
       }
       .card-soul{
-        border-top-color:red
+      border-top-color:red
       }
       .card-superpowers{
-         border-top-color:yellow;
+      border-top-color:yellow;
       }
       .card-world{
-        border-top-color:blue;
+      border-top-color:blue;
       }
       .card-prototype span.glyphicon{
-        color:rgb(47, 197, 47);
+      color:rgb(47, 197, 47);
       }
       .card-soul span.glyphicon{
-        color:red
+      color:red
       }
       .card-superpowers span.glyphicon{
-         color:yellow;
+      color:yellow;
       }
       .card-world span.glyphicon{
-        color:blue;
+      color:blue;
       }
       .thumbnail span.glyphicon{
-        transition: 0.5s;
-      }
-      .thumbnail:hover span.glyphicon{
-        font-size:50px;
+      transition: 0.5s;
       }
       /* Info */
       #info .list-group-item-heading{
-        font-family: 'Open Sans', sans-serif;
-        font-size:25px;
+      font-family: 'Open Sans', sans-serif;
+      font-size:25px;
       }
       #info .list-group-item-text{
-        font-family: 'Open Sans', sans-serif;
-        font-size:15px;
-        color:grey;
+      font-family: 'Open Sans', sans-serif;
+      font-size:15px;
+      color:grey;
       }
       section{
-        padding-bottom:30px;
+      padding-bottom:30px;
+      }
+      .btn-cta{
+      color: whitesmoke;
+      border-right-style: solid;
+      border-bottom-style: solid;
+      border-width: 10px;
+      border-radius: 13px;
+      font-size: 50px;
+      background: red;
+      border-color: rgb(167, 6, 6);
+      border-left: none;
+      border-top: none;
+      border-bottom-right-radius:5px;
+      margin-bottom: 5px;
+      }
+      .btn-cta:hover{
+      background: rgb(167, 6, 6);
+      border-color: red;
+      }
+      /* Medium Devices, Desktops */
+      @media only screen and (min-width : 768px) {
+        .btn-cta{
+          float:right;
+        }
+      }
+      /*
+      .copy{
+        background-color:white;
+        padding: 5px;
+      }*/
+      .copy{
+        color: rgb(78, 76, 76);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        line-height: 28.571430206298828px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        background-color: white;
+        padding: 3px;
+      }
+      .navbar{
+        margin-bottom: 0px;
+      }
+      footer{
+        background-color:#112C61;
+        min-height:80px;
+      }
+      #course-content h2.section-header{
+        color:rgb(31, 82, 179);
+      }
+      #made-by p{
+        color:white;
       }
     </style>
   </head>
-
   <body>
     <div class="main">
       <header>
-	<nav class="navbar" role="navigation">
-	  <div class="container">
-	    <div class="row">
-	      <div class="col-xs-6">
-		<h4 class="logo">
-		  Career<strong>Upgrade</strong><span class="glyphicon glyphicon-upload"></span>
-		</h4>
-	      </div>
-	    </div>
-	  </div>
-	</nav>
+        <nav class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-left">
+                <h4 class="logo">
+                  Siguiente<strong>Nivel</strong><span class="glyphicon glyphicon-upload"></span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </nav>
       </header>
       <main>
-	<div class="container">
-	  <div class="row">
-	    <div class="pull-right text-right">
-	      <div class="row header-division">
-		<h1 class="header">Intro al</h1>
-	      </div>
-	      <div class="row header-division">		
-		<h1 class="header">desarrollo</h1>
-	      </div>
-	      <div class="row header-division">
-		<h1 class="header">web</h1>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-      </main>
-    </div> <!-- Main -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-right">
+              <div class="header-division">
+                <h1 class="header">Intro al</h1>
+              </div>
+              <div class="header-division">
+                <h1 class="header">desarrollo</h1>
+              </div>
+              <div class="header-division">
+                <h1 class="header">web</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-offset-6 col-sm-6 col-md-offset-8 col-md-4">
+              <p class="copy">
+                Avanza al <strong>Siguiente Nivel</strong> aprendiendo a desarrollar aplicaciones web de manera ágil. Crea un prototipo, dale vida, dale superpoderes y comparte tu creación con el mundo.
 
+              </p>
+            </div>
+          </div>
+          <!-- Row -->
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <a href="#inscriptions" class="btn btn-primary btn-cta scroll-link">¡Inscríbete ya! </a>
+            </div >
+          </div>
+          <!-- Row -->
+        </div>
+        <!-- Container -->
+      </main>
+    </div>
+    <!-- Main -->
     <section id="course-content" class="course-content-container">
       <div class="container">
-	<div class="row section-header-row">
- 	  <div class="col-xs-12 col-md-6">
-	    <a href="#course-content" class="section-header scroll-link">&gt;Contenido:</a>
-	  </div>
-	</div>
-
-
-	<div class="row">
-	  <div class="col-xs-12 col-md-6 col-lg-3">
-	    <div class="thumbnail card-prototype">
-	      <div class="caption">
-		<h3 class="text-center"><span class="glyphicon glyphicon-pencil"/></h3>
-		<h3>Plasma tus ideas con un prototipo</h3>
-		<p>Aprende a crear un prototipo rápidamente utilizando Bootstrap y JQuery. Además aprende a hacer que tu aplicación se vea bien con nuestro minicurso: “Diseño para no diseñadores en 10 minutos (diploma no incluido)”.</p>
-	      </div>
-	    </div>
-	  </div>
-
-
-	  <div class="col-xs-12 col-md-6 col-lg-3">
-	    <div class="thumbnail card-soul">
-	      <div class="caption">
-		<h3 class="text-center"><span class="glyphicon glyphicon-heart"/></h3>
-		<h3>Dale alma a tu App</h3>
-		<p>Crea un API que le de alma a tu aplicación utilizando Node.js y express.js. Y lo mejor de todo: sin archivos de configuración, sin wizards ni servidores que consumen 1GB de RAM.</p>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="visible-md row">
-	  </div>
-	   
-	  <div class="col-xs-12 col-md-6 col-lg-3">
-	    <div class="thumbnail card-superpowers">
-	      <div class="caption">
-		<h3 class="text-center"><span class="glyphicon glyphicon-flash"/></h3>
-		<h3>Dale superpoderes a tu App</h3>
-		<p>Haz que tus usuarios compartan tu aplicación en redes sociales y no pierdas tiempo configurando una base de datos, deja que Firebase se encargue de guardarlos.</p>
-	      </div>
-	    </div>
-	  </div>
-
-	  <div class="col-xs-12 col-md-6 col-lg-3">
-	    <div class="thumbnail card-world">
-	      <div class="caption">
-		<h3 class="text-center"><span class="glyphicon glyphicon-globe"/></h3>
-		<h3>Comparte tu creación con el mundo</h3>
-		<p>Pon tu aplicación online utilizando únicamente git y los servicios de heroku. ¡Sí!, es verdad, no tienes que saber cómo administrar un servidor ni escribir archivos de configuración.</p>
-	      </div>
-	    </div>
-	  </div>
-
-	</div><!-- Row 1-->
-
-      </div><!-- container -->
-    </section><!-- course content -->
-
+        <div class="row section-header-row">
+          <div class="col-xs-12 col-md-6">
+            <h2 class="section-header">&gt;Contenido:</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="thumbnail card-prototype">
+              <div class="caption">
+                <h3 class="text-center"><span class="glyphicon glyphicon-pencil"/></h3>
+                <h3>Plasma tus ideas con un prototipo</h3>
+                <p>Aprende a crear un prototipo rápidamente utilizando Bootstrap y JQuery. Además aprende a hacer que tu aplicación se vea bien con nuestro minicurso: “Diseño para no diseñadores en 10 minutos (diploma no incluido)”.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="thumbnail card-soul">
+              <div class="caption">
+                <h3 class="text-center"><span class="glyphicon glyphicon-heart"/></h3>
+                <h3>Dale alma a tu App</h3>
+                <p>
+                  Crea un API que le de alma a tu aplicación utilizando Node.js y express.js. Y lo mejor de todo: sin archivos de configuración, sin wizards ni servidores que consumen 1GB de RAM.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="visible-md row">
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="thumbnail card-superpowers">
+              <div class="caption">
+                <h3 class="text-center"><span class="glyphicon glyphicon-flash"/></h3>
+                <h3>Dale superpoderes a tu App</h3>
+                <p>Haz que tus usuarios compartan tu aplicación en redes sociales y no pierdas tiempo configurando una base de datos, deja que Firebase se encargue de guardarlos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="thumbnail card-world">
+              <div class="caption">
+                <h3 class="text-center"><span class="glyphicon glyphicon-globe"/></h3>
+                <h3>Comparte tu creación con el mundo</h3>
+                <p>
+                  Pon tu aplicación online utilizando únicamente git y los servicios de heroku. ¡Sí!, es verdad, no tienes que saber cómo administrar un servidor ni escribir archivos de configuración.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 1-->
+      </div>
+      <!-- container -->
+    </section>
+    <!-- course content -->
     <section id="info">
       <div class="container">
-	<div class="row section-header-row">
- 	  <div class="col-xs-12 col-md-6">
-	    <a href="#info" class="section-header scroll-link">&gt;Info:</a>
-	  </div>
-	</div>
-
-	<div class="row">
-	  <ul class="col-xs-8 col-md-6 list-group text-center" style="float:none; margin: 0 auto;">
-	    <li class="list-group-item">
-	      <p class="list-group-item-text">
-		<span class="glyphicon glyphicon-calendar"></span>
-		Siguiente fecha
-	      </p>
-	      <h2 class="list-group-item-heading">Agosto 30 y Agosto 31</h2>
-	    </li>
-
-	    <li class="list-group-item">
-	      <p class="list-group-item-text">
-		<span class="glyphicon glyphicon-map-marker"></span>
-		Lugar
-	      </p>
-	      <h2 class="list-group-item-heading">Por confirmar</h2>
-	    </li>
-
-	    <li class="list-group-item">
-	      <p class="list-group-item-text">
-		<span class="glyphicon glyphicon-time"></span>
-		Duración
-	      </p>
-	      <h2 class="list-group-item-heading">16H</h2>
-	      <p class="list-group-item-text">2 días. Cada día 4 horas de teoría y 4 horas de práctica</p>
-	    </li>
-
-	    <li class="list-group-item">
-	      <p class="list-group-item-text">
-		<span class="glyphicon glyphicon-usd"></span>
-		Inversión
-	      </p>
-	      <h2 class="list-group-item-heading">$50K</h2>
-	      <p class="list-group-item-text">Precio de versión beta</p>
-	    </li>
-
-
-	  </ul>
-	</div>
+        <div class="row section-header-row">
+          <div class="col-xs-12 col-md-6">
+            <h2 class="section-header">&gt;Info:</h2>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="col-xs-8 col-md-6 list-group text-center" style="float:none; margin: 0 auto;">
+            <li class="list-group-item">
+              <p class="list-group-item-text">
+                <span class="glyphicon glyphicon-calendar"></span>
+                Siguiente fecha
+              </p>
+              <h2 class="list-group-item-heading">Agosto 30 y Agosto 31</h2>
+            </li>
+            <li class="list-group-item">
+              <p class="list-group-item-text">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                Lugar
+              </p>
+              <h2 class="list-group-item-heading">Por confirmar</h2>
+            </li>
+            <li class="list-group-item">
+              <p class="list-group-item-text">
+                <span class="glyphicon glyphicon-time"></span>
+                Duración
+              </p>
+              <h2 class="list-group-item-heading">16H</h2>
+              <p class="list-group-item-text">2 días. Cada día 4 horas de teoría y 4 horas de práctica</p>
+            </li>
+            <li class="list-group-item">
+              <p class="list-group-item-text">
+                <span class="glyphicon glyphicon-usd"></span>
+                Inversión
+              </p>
+              <h2 class="list-group-item-heading">$50.000 COP</h2>
+              <p class="list-group-item-text">Precio de versión beta</p>
+              <p class="list-group-item-text">Precio normal: $100.000 COP</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-
     <section id="inscriptions">
       <div class="container">
-	<div class="row section-header-row">
- 	  <div class="col-xs-12 col-md-6">
-	    <a href="#inscriptions" class="section-header scroll-link">&gt;Inscripciones:</a>
-	  </div>
-	</div>
-	<div id="welcu_embed_sale_36643625" class="welcu_embed col-xs-12 col-md-8" style="float:none;margin: 0 auto;"></div>
-	<script type="text/javascript" charset="utf-8">
-	  (function() {
-	  var embed = document.createElement('script'); embed.type = 'text/javascript'; embed.async = true;
-	  embed.src = "https://welcu.com/career-upgrade/intro-a-desarrollo-web/sales/03c731a4.embed";
-	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(embed, s);
-	  })();
-	</script>
+        <div class="row section-header-row">
+          <div class="col-xs-12 col-md-6">
+            <h2 class="section-header">&gt;Inscripciones:</a>
+          </div>
+        </div>
+        <div id="welcu_embed_sale_36643625" class="welcu_embed col-xs-12 col-md-8" style="float:none;margin: 0 auto;"></div>
+        <script type="text/javascript" charset="utf-8">
+          (function() {
+          var embed = document.createElement('script'); embed.type = 'text/javascript'; embed.async = true;
+          embed.src = "https://welcu.com/career-upgrade/intro-a-desarrollo-web/sales/03c731a4.embed";
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(embed, s);
+          })();
+        </script>
+      </div>
+    </section>
+    <!-- inscriptions -->
+    <footer id="made-by">
+      <div class="container">
+        <div class="row pull-right">
+          <p>
+            Creado por:
+          </p>
+          <h4 class="logo">
+            Siguiente<strong>Nivel</strong><span class="glyphicon glyphicon-upload"></span>
+          </h4>
+        </div>
 
       </div>
-    </section><!-- inscriptions -->
-    <footer id="made-by" style="background-color:black;min-height:50px;">
-      <div class="container">
-      		<h4 class="logo pull-right">
-		  Career<strong>Upgrade</strong><span class="glyphicon glyphicon-upload"></span>
-		</h4>
-     <div>
-
     </footer>
-
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/modal.js"></script>
     <script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
     <script src="js/main.js" type="text/javascript"> </script>
-
   </body>
 </html>
