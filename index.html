@@ -31,7 +31,7 @@
       -webkit-font-smoothing: antialiased;
       font-family: 'Open Sans', sans-serif;
       font-size:50px;
-      color:rgb(51,51,51);
+      color:black;
       background-color: white;
       display:inline;
       }
@@ -69,7 +69,7 @@
       }
       /* Medium Devices, Desktops */
       @media only screen and (min-width : 768px) {
-        .thumbnail:hover{
+        .thumbnail-card:hover{
         border-top-width:30px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
         transition: 0.5s;
@@ -160,30 +160,46 @@
         background-color:white;
         padding: 5px;
       }*/
-      .copy{
-        color: rgb(78, 76, 76);
+      .text{
         font-family: 'Open Sans', sans-serif;
         font-size: 20px;
         line-height: 28.571430206298828px;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px;
-        background-color: white;
         padding: 3px;
-      }
-      .navbar{
-        margin-bottom: 0px;
       }
       footer{
         background-color:#112C61;
         min-height:80px;
       }
       #course-content h2.section-header{
-        color:rgb(31, 82, 179);
+        color:#2C95FF;
       }
+      #prerequisites h2.section-header{
+        color:#2C95FF;
+      }
+      #methodology h2.section-header{
+        color:#2C95FF;
+      }
+
       #made-by p{
         color:white;
       }
+      .navbar-link{
+        background-color: rgb(31, 82, 179);
+        color: white;
+      }
+
+
+      .card-main{
+      background: white;
+      border-top-style: solid;
+      border-top-color: red;
+      border-top-width: thick;
+
+      }
+
     </style>
   </head>
   <body>
@@ -194,44 +210,34 @@
             <div class="row">
               <div class="navbar-left">
                 <h4 class="logo">
-                  Siguiente<strong>Nivel</strong><span class="glyphicon glyphicon-upload"></span>
+                      Siguiente<strong>Nivel</strong><span class="glyphicon glyphicon-upload"></span>
                 </h4>
               </div>
             </div>
           </div>
         </nav>
+
       </header>
       <main>
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 text-right">
-              <div class="header-division">
-                <h1 class="header">Intro al</h1>
-              </div>
-              <div class="header-division">
-                <h1 class="header">desarrollo</h1>
-              </div>
-              <div class="header-division">
-                <h1 class="header">web</h1>
+          <div class="pull-right col-xs-8 col-sm-6 col-md-4">
+            <div class="thumbnail card-main">
+              <div class="caption">
+                <h3 class="text-center"></h3>
+                <h3>Intro al Desarrollo Web</h3>
+                <p>
+                  Avanza al Siguiente Nivel aprendiendo a desarrollar aplicaciones web de manera ágil.
+                </p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-offset-6 col-sm-6 col-md-offset-8 col-md-4">
-              <p class="copy">
-                Avanza al <strong>Siguiente Nivel</strong> aprendiendo a desarrollar aplicaciones web de manera ágil. Crea un prototipo, dale vida, dale superpoderes y comparte tu creación con el mundo.
-
-              </p>
-            </div>
-          </div>
-          <!-- Row -->
-          <div class="row">
-            <div class="col-xs-12 text-center">
+        </div>
+        <div class="row">
+            <div class="pull-right col-xs-12 col-sm-6 col-md-4 text-center">
               <a href="#inscriptions" class="btn btn-primary btn-cta scroll-link">¡Inscríbete ya! </a>
             </div >
           </div>
-          <!-- Row -->
-        </div>
         <!-- Container -->
       </main>
     </div>
@@ -240,12 +246,12 @@
       <div class="container">
         <div class="row section-header-row">
           <div class="col-xs-12 col-md-6">
-            <h2 class="section-header">&gt;Contenido:</h2>
+            <h2 class="section-header">&gt;Temario:</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 col-md-6 col-lg-3">
-            <div class="thumbnail card-prototype">
+            <div class="thumbnail thumbnail-card card-prototype">
               <div class="caption">
                 <h3 class="text-center"><span class="glyphicon glyphicon-pencil"/></h3>
                 <h3>Plasma tus ideas con un prototipo</h3>
@@ -254,7 +260,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-3">
-            <div class="thumbnail card-soul">
+            <div class="thumbnail thumbnail-card card-soul">
               <div class="caption">
                 <h3 class="text-center"><span class="glyphicon glyphicon-heart"/></h3>
                 <h3>Dale alma a tu App</h3>
@@ -267,7 +273,7 @@
           <div class="visible-md row">
           </div>
           <div class="col-xs-12 col-md-6 col-lg-3">
-            <div class="thumbnail card-superpowers">
+            <div class="thumbnail thumbnail-card card-superpowers">
               <div class="caption">
                 <h3 class="text-center"><span class="glyphicon glyphicon-flash"/></h3>
                 <h3>Dale superpoderes a tu App</h3>
@@ -276,7 +282,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-3">
-            <div class="thumbnail card-world">
+            <div class="thumbnail thumbnail-card card-world">
               <div class="caption">
                 <h3 class="text-center"><span class="glyphicon glyphicon-globe"/></h3>
                 <h3>Comparte tu creación con el mundo</h3>
@@ -291,6 +297,44 @@
       </div>
       <!-- container -->
     </section>
+    <section id="prerequisites">
+      <div class="container">
+        <div class="row section-header-row">
+          <div class="col-xs-12">
+            <h2 class="section-header">&gt;¿A quién está dirigido?:</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="text">Este curso está dirigido a personas con conocimientos básicos de programación y con muchas ganas de aprender ya que veremos <strong>muchos temas en poco tiempo</strong>. Sin embargo, si te gusta programar, si te gusta aprender cosas nuevas y si estás dispuesto a dedicarte 100% a aprender desarrollo web durante 2 días ¡Este curso es para ti!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="methodology">
+      <div class="container">
+        <div class="row section-header-row">
+          <div class="col-xs-12">
+            <h2 class="section-header">&gt;Metodología:</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="text"><code>50% teoría + 50% práctica</code></p>
+
+            <p class="text">
+              Durante el curso desarrollaremos un proyecto dividido en 4 fases, cada una relacionada con un módulo del curso.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
     <!-- course content -->
     <section id="info">
       <div class="container">
